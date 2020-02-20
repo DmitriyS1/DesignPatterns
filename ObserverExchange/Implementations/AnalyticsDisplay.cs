@@ -1,19 +1,25 @@
 ﻿using ObserverExchange.Interfaces;
 using ObserverExchange.Models;
+using System;
 using System.Collections.Generic;
 
 namespace ObserverExchange.Implementations
 {
-    public class NewsDisplay : IObserver, IDisplay
+    public class AnalyticsDisplay : IObserver, IDisplay
     {
+        private ExchangeData Data;
+        private AnalyticsData Analitics;
+
         public void Display()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("Analytics evaluates here...");
         }
 
         public void Update(ExchangeData exchangeData, AnalyticsData analiticsData, List<News> news)
         {
-            throw new System.NotImplementedException();
+            Data = exchangeData;
+            Analitics = analiticsData;
+            Display();
         }
     }
 }

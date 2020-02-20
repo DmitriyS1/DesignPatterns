@@ -1,4 +1,7 @@
-﻿namespace ObserverExchange.Interfaces
+﻿using ObserverExchange.Models;
+using System.Collections.Generic;
+
+namespace ObserverExchange.Interfaces
 {
     /// <summary>
     /// Интерфейс для наблюдателя
@@ -8,6 +11,6 @@
         /// <summary>
         /// Обновить информацию
         /// </summary>
-        void Update();
+        void Update(ExchangeData exchangeData, AnalyticsData analiticsData, List<News> news);
     }
 }

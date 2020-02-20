@@ -1,4 +1,6 @@
 ﻿using ObserverExchange.Interfaces;
+using ObserverExchange.Models;
+using System.Collections.Generic;
 
 namespace ObserverExchange.Implementations
 {
@@ -9,7 +11,7 @@ namespace ObserverExchange.Implementations
             throw new System.NotImplementedException();
         }
 
-        public void Update()
+        public void Update(ExchangeData exchangeData, AnalyticsData analiticsData, List<News> news)
         {
             throw new System.NotImplementedException();
         }

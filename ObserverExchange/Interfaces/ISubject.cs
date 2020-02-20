@@ -3,7 +3,7 @@
     /// <summary>
     /// Интерфейс субъекта
     /// </summary>
-    interface ISubject
+    public interface ISubject
     {
         /// <summary>
         /// Зарегистрировать наблюдателя
